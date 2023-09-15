@@ -1,0 +1,25 @@
+{
+  "name": "curso-node-js",
+  "version": "1.0.0",
+  "description": "curso node",
+  "type": "module",
+  "main": "teste.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node teste.js",
+    "dev": "npx nodemon teste.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "esl": "^11.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "int": "^0.2.0",
+    "prettier": "^3.0.3"
+  }
+}
