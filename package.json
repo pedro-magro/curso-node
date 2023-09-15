@@ -7,7 +7,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node teste.js",
-    "dev": "npx nodemon teste.js"
+    "dev": "npx nodemon src/teste.js",
+    "lint:fix": "npx eslint ./src --ext .js --fix --ignore-path ./.gitignore",
+    "lint:format": "npx prettier --log-level warn --write \"./src/**/*.{js,ts}\" ",
+    "lint": "npm run lint:format && npm run lint:fix"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +23,8 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^5.0.0",
     "int": "^0.2.0",
+    "pre-commit": "^1.2.2",
     "prettier": "^3.0.3"
-  }
+  },
+  "pre-commit": "lint"
 }
