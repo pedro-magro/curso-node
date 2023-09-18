@@ -6,7 +6,7 @@
   "main": "teste.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node teste.js",
+    "start": "node src/teste.js",
     "dev": "npx nodemon src/teste.js",
     "lint:fix": "npx eslint ./src --ext .js --fix --ignore-path ./.gitignore",
     "lint:format": "npx prettier --log-level warn --write \"./src/**/*.{js,ts}\" ",
