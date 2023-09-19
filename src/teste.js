@@ -5,6 +5,8 @@ import { productRouter } from './modules/product/product.controller.js';
 
 const app = express();
 
+app.use(express.json());
+
 app.use(userRouter);
 app.use(productRouter);
 
